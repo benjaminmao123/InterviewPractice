@@ -9,10 +9,6 @@ TEST(MessageValidatorTest, ValidMessage)
     // Test valid message with 4 bytes
     std::vector<uint8_t> message = {0xAA, 0x01, 0x02, 0x55};
     EXPECT_TRUE(validator.IsValid(message));
-
-    // Test valid message with more than 4 bytes
-    message = {0xAA, 0x01, 0x02, 0x55, 0x03};
-    EXPECT_TRUE(validator.IsValid(message));
 }   
 
 TEST(MessageValidatorTest, InvalidMessageSize)

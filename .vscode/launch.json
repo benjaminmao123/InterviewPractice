@@ -2,7 +2,7 @@
     "configurations": [
         {
             "name": "C++ Launch",
-            "type": "lldb",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/Source/InterviewPractice",
             "args": [],
@@ -10,7 +10,7 @@
         },
         {
             "name": "C++ Launch Tests",
-            "type": "lldb",
+            "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/Tests/InterviewPracticeTests",
             "args": [],
