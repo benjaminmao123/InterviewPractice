@@ -3,11 +3,11 @@
 class Counter
 {
 public:
-    Counter() : value_(0) {}
-    void Increment() { value_++; }
-    void Reset() { value_ = 0; }
-    int Value() const { return value_; }
+    Counter() : mValue(0) {}
+    void Increment() { mValue++; }
+    void Reset() { mValue = 0; }
+    int Value() const { return mValue; }
 
 private:
-    int value_;
+    int mValue;
 };
